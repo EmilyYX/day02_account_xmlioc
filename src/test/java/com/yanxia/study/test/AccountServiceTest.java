@@ -24,7 +24,7 @@ public class AccountServiceTest {
         }
     }
     @Test
-    public void testFindAcById(int i) throws SQLException {
+    public void testFindAcById() throws SQLException {
         ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
         IAccountService as = ac.getBean("accountService",IAccountService.class);
         Account account = as.findAccountById("1");
